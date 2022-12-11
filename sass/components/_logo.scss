@@ -1,0 +1,28 @@
+.logo {
+
+}
+
+.webstudio {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--hover-active-link-color);
+    line-height: 1.16;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+@media (min-width:769) {
+    .webstudio {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.webstudio--dark {
+    color: var(--basic-text-color);
+}
+
+.web {
+
+}

@@ -1,0 +1,46 @@
+/* icons from social media in team member description */
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    width: 210px;
+    margin-bottom: 30px;
+  }
+  
+  .social-links__icon {
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+  }
+  
+  .socials-links__background {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background, color;
+    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--tr-function);
+  }
+  
+  .socials-links__background--bright {
+    color: var(--customer-icon-color);
+    background: var(--bright-background);
+  }
+  
+  .socials-links__background--bright:hover,
+  .socials-links__background--bright:focus {
+    background: var(--hover-active-link-color);
+    color: var(--bright-background);
+  }
+  
+  .socials-links__background--dark {
+    color: var(--bright-text-color);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .socials-links__background--dark:hover,
+  .socials-links__background--dark:focus {
+    background: var(--hover-active-link-color);
+  }

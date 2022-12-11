@@ -1,0 +1,5 @@
+a:hover {
+    transition-property: color;
+    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--tr-function);
+}

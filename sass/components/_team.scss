@@ -1,0 +1,46 @@
+/* Team Members presentation section */
+
+.tm {
+    width: 270px;
+  }
+
+  .tm__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .tm__social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tm__photo {
+    width: 100%
+  }
+  
+  .tm__description {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--bright-background);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .tm__description__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--basic-text-color);
+    margin-bottom: 10px;
+  }
+  
+  .tm__description__role {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--light-text-color);
+    margin-bottom: 16px;
+  }
