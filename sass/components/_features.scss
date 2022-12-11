@@ -1,0 +1,45 @@
+.features {
+    @media screen and (min-width: $tablet) {    
+    display: flex;     
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--basic-gap);
+    }
+}
+
+.features__item {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0px;
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}
+
+.features__image {
+    @include flex-centered;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--color-grey);
+    border-radius: var(--basic-radius);
+}
+
+.features__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.features__title {
+    @include font-style(var(--font-bold), var(--font-standard-size), 1.14, 0.03em);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-title);
+    @media screen and (min-width: $tablet) {
+            text-align: left;
+        }
+}

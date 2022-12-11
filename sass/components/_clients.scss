@@ -1,0 +1,43 @@
+.client {
+    @include flex-centered;
+    flex-wrap: wrap;
+    gap: var(--basic-gap);   
+}
+.client__item {
+    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $tablet) {
+                flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+                flex-basis: calc((100% - 150px) / 6);
+    }
+}
+
+.client__icon {
+    width: 106px; 
+    height: 60px;
+}
+
+.client__link {
+    display: flex;
+    min-width: 210px;
+    height: 92px;
+    @media screen and (min-width: $tablet) {
+    min-width: 226px;
+    }
+    @media screen and (min-width: $desktop) {
+    min-width: 170px;
+    }
+    border: 1px solid var(--color-icon);
+    border-radius: var(--basic-radius);
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-icon);
+    transition: background-color --cubic-250,
+        color var(--cubic-250);
+        &:hover, &:focus {
+            border: 1px solid var(--color-accent);
+            fill: var(--color-accent);
+            outline: transparent;
+        }
+}
